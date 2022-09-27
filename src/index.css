@@ -38,6 +38,7 @@ body {
   margin-bottom: 2rem;
 }
 
+/* BUTTON */
 .btn {
   color: white;
   background-color: #1762A7;
@@ -61,4 +62,61 @@ body {
 .full-height-grow {
   display: flex;
   flex-direction: column;
+}
+
+/* FOOTER */
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: #202027;
+  font-weight: bold;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.social-link img {
+  width: 1em;
+  margin-right: .25rem;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.footer-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.footer-nav a:hover {
+  color: #adadad
+}
+
+@media (max-width: 660px) {
+  .main-footer {
+    font-weight: normal;
+  }
+  .footer-nav ul {
+    display: block;
+  }
+  .main-footer .container {
+    justify-content: space-around;
+  }
 }
